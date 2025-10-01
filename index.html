@@ -59,12 +59,12 @@
 
   
   <footer>
-   <p id="lastModified">Date Last Modified: </p>
-    // Get the last modified date of the document
-        const lastModified = document.lastModified;
+   <p>Last Modified: <span id="lastModified"></span></p>
 
-        // Display the last modified date in the footer
-        document.getElementById('lastModified').textContent = `Date Last
+    <script>
+  document.getElementById("lastModified").textContent =
+    new Date(document.lastModified).toLocaleString();
+</script>
    
   </footer>
 </html>
