@@ -37,6 +37,6 @@
  <a href="mailto:leffela@purdue.edu"> For more information about our history and story, email us!</a>
 </body>
   <footer>
-      <p>Last modified: <span id="lastModified"></span></p>
+     <p>Last modified: <?php echo date("F j, Y", filemtime(__FILE__)); ?></p>
   </footer>
 </html>
